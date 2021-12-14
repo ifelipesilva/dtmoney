@@ -4,6 +4,12 @@ export const GlobalStyle = createGlobalStyle`
 
   :root{
     --background: #f0f2f5;
+    --red: #e52e4d;
+    --blue: #5429cc;
+    --blue-light: #6933ff;
+    --text-title: #363f5f;
+    --text-body: #969cb3;
+    --shape: #ffffff;
   }
 
     *{
@@ -13,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     // font-size: 16px (Desktop)
+
     html {
       @media (max-width: 1080px){
         font-size: 93.75%;
@@ -29,6 +36,15 @@ export const GlobalStyle = createGlobalStyle`
     }
 
 
+
+    button {
+      cursor: pointer;
+    }
     
+
+    [disabled]{
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
 
 `;
